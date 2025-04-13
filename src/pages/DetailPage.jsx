@@ -22,12 +22,12 @@ function DetailPage() {
 
   const onLikeTalk = () => {
     // @TODO: dispatch async action to toggle like talk detail
-    dispatch(asyncToggleLikeTalkDetail)
+    dispatch(asyncToggleLikeTalkDetail);
   };
 
   const onReplyTalk = (text) => {
     // @TODO: dispatch async action to add reply talk
-    dispatch(asyncAddTalk({ text, replyTo: id}))
+    dispatch(asyncAddTalk({ text, replyTo: id }));
   };
 
   if (!talkDetail) {
