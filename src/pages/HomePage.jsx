@@ -6,12 +6,13 @@ import {asyncPopulateUsersAndTalks} from '../states/shared/action'
 import { asyncAddTalk, asyncToggleLikeTalk } from '../states/talks/action';
 
 function HomePage() {
+  // @TODO: get talks, users, and authUser state from store
   const {
     talks = [],
     users = [],
     authUser,
-  } = useSelector((states) => states); // @TODO: get talks, users, and authUser state from store
-
+  } = useSelector((states) => states); 
+  
   const dispatch = useDispatch(); // @TODO: get dispatch function from store
 
   useEffect(() => {
