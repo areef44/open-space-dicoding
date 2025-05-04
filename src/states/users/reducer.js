@@ -1,8 +1,5 @@
 import { ActionType } from "./action";
 
-/**
- * @TODO: Define reducer for the users state
- */
 function usersReducer(users = [], action = {}) {
   switch (action.type) {
     case ActionType.RECEIVE_USERS:
