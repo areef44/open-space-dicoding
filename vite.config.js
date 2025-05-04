@@ -7,5 +7,11 @@ export default defineConfig({
 	test: {
 		globals: true,
 		environment: 'jsdom'
+	},
+	e2e: {
+		setupNodeEvent(on,config) {
+
+		},
+		video: false
 	}
 })
